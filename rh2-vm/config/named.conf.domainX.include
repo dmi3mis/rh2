@@ -1,0 +1,594 @@
+zone "domain1.example.com" {
+        type master;
+        file "domain1.example.com.zone";
+        forwarders {};
+};
+
+zone "domain2.example.com" {
+        type master;
+        file "domain2.example.com.zone";
+        forwarders {};
+};
+
+zone "domain3.example.com" {
+        type master;
+        file "domain3.example.com.zone";
+        forwarders {};
+};
+
+zone "domain4.example.com" {
+        type master;
+        file "domain4.example.com.zone";
+        forwarders {};
+};
+
+zone "domain5.example.com" {
+        type master;
+        file "domain5.example.com.zone";
+        forwarders {};
+};
+
+zone "domain6.example.com" {
+        type master;
+        file "domain6.example.com.zone";
+        forwarders {};
+};
+
+zone "domain7.example.com" {
+        type master;
+        file "domain7.example.com.zone";
+        forwarders {};
+};
+
+zone "domain8.example.com" {
+        type master;
+        file "domain8.example.com.zone";
+        forwarders {};
+};
+
+zone "domain9.example.com" {
+        type master;
+        file "domain9.example.com.zone";
+        forwarders {};
+};
+
+zone "domain10.example.com" {
+        type master;
+        file "domain10.example.com.zone";
+        forwarders {};
+};
+
+zone "domain11.example.com" {
+        type master;
+        file "domain11.example.com.zone";
+        forwarders {};
+};
+
+zone "domain12.example.com" {
+        type master;
+        file "domain12.example.com.zone";
+        forwarders {};
+};
+
+zone "domain13.example.com" {
+        type master;
+        file "domain13.example.com.zone";
+        forwarders {};
+};
+
+zone "domain14.example.com" {
+        type master;
+        file "domain14.example.com.zone";
+        forwarders {};
+};
+
+zone "domain15.example.com" {
+        type master;
+        file "domain15.example.com.zone";
+        forwarders {};
+};
+
+zone "domain16.example.com" {
+        type master;
+        file "domain16.example.com.zone";
+        forwarders {};
+};
+
+zone "domain17.example.com" {
+        type master;
+        file "domain17.example.com.zone";
+        forwarders {};
+};
+
+zone "domain18.example.com" {
+        type master;
+        file "domain18.example.com.zone";
+        forwarders {};
+};
+
+zone "domain19.example.com" {
+        type master;
+        file "domain19.example.com.zone";
+        forwarders {};
+};
+
+zone "domain20.example.com" {
+        type master;
+        file "domain20.example.com.zone";
+        forwarders {};
+};
+
+zone "domain21.example.com" {
+        type master;
+        file "domain21.example.com.zone";
+        forwarders {};
+};
+
+zone "domain22.example.com" {
+        type master;
+        file "domain22.example.com.zone";
+        forwarders {};
+};
+
+zone "domain23.example.com" {
+        type master;
+        file "domain23.example.com.zone";
+        forwarders {};
+};
+
+zone "domain24.example.com" {
+        type master;
+        file "domain24.example.com.zone";
+        forwarders {};
+};
+
+zone "domain25.example.com" {
+        type master;
+        file "domain25.example.com.zone";
+        forwarders {};
+};
+
+zone "domain26.example.com" {
+        type master;
+        file "domain26.example.com.zone";
+        forwarders {};
+};
+
+zone "domain27.example.com" {
+        type master;
+        file "domain27.example.com.zone";
+        forwarders {};
+};
+
+zone "domain28.example.com" {
+        type master;
+        file "domain28.example.com.zone";
+        forwarders {};
+};
+
+zone "domain29.example.com" {
+        type master;
+        file "domain29.example.com.zone";
+        forwarders {};
+};
+
+zone "domain30.example.com" {
+        type master;
+        file "domain30.example.com.zone";
+        forwarders {};
+};
+
+zone "domain31.example.com" {
+        type master;
+        file "domain31.example.com.zone";
+        forwarders {};
+};
+
+zone "domain32.example.com" {
+        type master;
+        file "domain32.example.com.zone";
+        forwarders {};
+};
+
+zone "domain33.example.com" {
+        type master;
+        file "domain33.example.com.zone";
+        forwarders {};
+};
+
+zone "domain34.example.com" {
+        type master;
+        file "domain34.example.com.zone";
+        forwarders {};
+};
+
+zone "domain35.example.com" {
+        type master;
+        file "domain35.example.com.zone";
+        forwarders {};
+};
+
+zone "domain36.example.com" {
+        type master;
+        file "domain36.example.com.zone";
+        forwarders {};
+};
+
+zone "domain37.example.com" {
+        type master;
+        file "domain37.example.com.zone";
+        forwarders {};
+};
+
+zone "domain38.example.com" {
+        type master;
+        file "domain38.example.com.zone";
+        forwarders {};
+};
+
+zone "domain39.example.com" {
+        type master;
+        file "domain39.example.com.zone";
+        forwarders {};
+};
+
+zone "domain40.example.com" {
+        type master;
+        file "domain40.example.com.zone";
+        forwarders {};
+};
+
+zone "domain41.example.com" {
+        type master;
+        file "domain41.example.com.zone";
+        forwarders {};
+};
+
+zone "domain42.example.com" {
+        type master;
+        file "domain42.example.com.zone";
+        forwarders {};
+};
+
+zone "domain43.example.com" {
+        type master;
+        file "domain43.example.com.zone";
+        forwarders {};
+};
+
+zone "domain44.example.com" {
+        type master;
+        file "domain44.example.com.zone";
+        forwarders {};
+};
+
+zone "domain45.example.com" {
+        type master;
+        file "domain45.example.com.zone";
+        forwarders {};
+};
+
+zone "domain46.example.com" {
+        type master;
+        file "domain46.example.com.zone";
+        forwarders {};
+};
+
+zone "domain47.example.com" {
+        type master;
+        file "domain47.example.com.zone";
+        forwarders {};
+};
+
+zone "domain48.example.com" {
+        type master;
+        file "domain48.example.com.zone";
+        forwarders {};
+};
+
+zone "domain49.example.com" {
+        type master;
+        file "domain49.example.com.zone";
+        forwarders {};
+};
+
+zone "domain50.example.com" {
+        type master;
+        file "domain50.example.com.zone";
+        forwarders {};
+};
+
+zone "domain51.example.com" {
+        type master;
+        file "domain51.example.com.zone";
+        forwarders {};
+};
+
+zone "domain52.example.com" {
+        type master;
+        file "domain52.example.com.zone";
+        forwarders {};
+};
+
+zone "domain53.example.com" {
+        type master;
+        file "domain53.example.com.zone";
+        forwarders {};
+};
+
+zone "domain54.example.com" {
+        type master;
+        file "domain54.example.com.zone";
+        forwarders {};
+};
+
+zone "domain55.example.com" {
+        type master;
+        file "domain55.example.com.zone";
+        forwarders {};
+};
+
+zone "domain56.example.com" {
+        type master;
+        file "domain56.example.com.zone";
+        forwarders {};
+};
+
+zone "domain57.example.com" {
+        type master;
+        file "domain57.example.com.zone";
+        forwarders {};
+};
+
+zone "domain58.example.com" {
+        type master;
+        file "domain58.example.com.zone";
+        forwarders {};
+};
+
+zone "domain59.example.com" {
+        type master;
+        file "domain59.example.com.zone";
+        forwarders {};
+};
+
+zone "domain60.example.com" {
+        type master;
+        file "domain60.example.com.zone";
+        forwarders {};
+};
+
+zone "domain61.example.com" {
+        type master;
+        file "domain61.example.com.zone";
+        forwarders {};
+};
+
+zone "domain62.example.com" {
+        type master;
+        file "domain62.example.com.zone";
+        forwarders {};
+};
+
+zone "domain63.example.com" {
+        type master;
+        file "domain63.example.com.zone";
+        forwarders {};
+};
+
+zone "domain64.example.com" {
+        type master;
+        file "domain64.example.com.zone";
+        forwarders {};
+};
+
+zone "domain65.example.com" {
+        type master;
+        file "domain65.example.com.zone";
+        forwarders {};
+};
+
+zone "domain66.example.com" {
+        type master;
+        file "domain66.example.com.zone";
+        forwarders {};
+};
+
+zone "domain67.example.com" {
+        type master;
+        file "domain67.example.com.zone";
+        forwarders {};
+};
+
+zone "domain68.example.com" {
+        type master;
+        file "domain68.example.com.zone";
+        forwarders {};
+};
+
+zone "domain69.example.com" {
+        type master;
+        file "domain69.example.com.zone";
+        forwarders {};
+};
+
+zone "domain70.example.com" {
+        type master;
+        file "domain70.example.com.zone";
+        forwarders {};
+};
+
+zone "domain71.example.com" {
+        type master;
+        file "domain71.example.com.zone";
+        forwarders {};
+};
+
+zone "domain72.example.com" {
+        type master;
+        file "domain72.example.com.zone";
+        forwarders {};
+};
+
+zone "domain73.example.com" {
+        type master;
+        file "domain73.example.com.zone";
+        forwarders {};
+};
+
+zone "domain74.example.com" {
+        type master;
+        file "domain74.example.com.zone";
+        forwarders {};
+};
+
+zone "domain75.example.com" {
+        type master;
+        file "domain75.example.com.zone";
+        forwarders {};
+};
+
+zone "domain76.example.com" {
+        type master;
+        file "domain76.example.com.zone";
+        forwarders {};
+};
+
+zone "domain77.example.com" {
+        type master;
+        file "domain77.example.com.zone";
+        forwarders {};
+};
+
+zone "domain78.example.com" {
+        type master;
+        file "domain78.example.com.zone";
+        forwarders {};
+};
+
+zone "domain79.example.com" {
+        type master;
+        file "domain79.example.com.zone";
+        forwarders {};
+};
+
+zone "domain80.example.com" {
+        type master;
+        file "domain80.example.com.zone";
+        forwarders {};
+};
+
+zone "domain81.example.com" {
+        type master;
+        file "domain81.example.com.zone";
+        forwarders {};
+};
+
+zone "domain82.example.com" {
+        type master;
+        file "domain82.example.com.zone";
+        forwarders {};
+};
+
+zone "domain83.example.com" {
+        type master;
+        file "domain83.example.com.zone";
+        forwarders {};
+};
+
+zone "domain84.example.com" {
+        type master;
+        file "domain84.example.com.zone";
+        forwarders {};
+};
+
+zone "domain85.example.com" {
+        type master;
+        file "domain85.example.com.zone";
+        forwarders {};
+};
+
+zone "domain86.example.com" {
+        type master;
+        file "domain86.example.com.zone";
+        forwarders {};
+};
+
+zone "domain87.example.com" {
+        type master;
+        file "domain87.example.com.zone";
+        forwarders {};
+};
+
+zone "domain88.example.com" {
+        type master;
+        file "domain88.example.com.zone";
+        forwarders {};
+};
+
+zone "domain89.example.com" {
+        type master;
+        file "domain89.example.com.zone";
+        forwarders {};
+};
+
+zone "domain90.example.com" {
+        type master;
+        file "domain90.example.com.zone";
+        forwarders {};
+};
+
+zone "domain91.example.com" {
+        type master;
+        file "domain91.example.com.zone";
+        forwarders {};
+};
+
+zone "domain92.example.com" {
+        type master;
+        file "domain92.example.com.zone";
+        forwarders {};
+};
+
+zone "domain93.example.com" {
+        type master;
+        file "domain93.example.com.zone";
+        forwarders {};
+};
+
+zone "domain94.example.com" {
+        type master;
+        file "domain94.example.com.zone";
+        forwarders {};
+};
+
+zone "domain95.example.com" {
+        type master;
+        file "domain95.example.com.zone";
+        forwarders {};
+};
+
+zone "domain96.example.com" {
+        type master;
+        file "domain96.example.com.zone";
+        forwarders {};
+};
+
+zone "domain97.example.com" {
+        type master;
+        file "domain97.example.com.zone";
+        forwarders {};
+};
+
+zone "domain98.example.com" {
+        type master;
+        file "domain98.example.com.zone";
+        forwarders {};
+};
+
+zone "domain99.example.com" {
+        type master;
+        file "domain99.example.com.zone";
+        forwarders {};
+};
+
