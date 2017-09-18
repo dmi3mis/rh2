@@ -6,7 +6,7 @@ systemctl start firewalld
 firewall-cmd --add-masquerade --permanent; firewall-cmd --reload
 
 
-yum -y install syslinux xinetd tftp-server vsftpd
+yum -y install syslinux xinetd tftp-server vsftpd bash-completion bash-completion-extra
 
 
 echo -e "Configuring dhcp server: /n"
