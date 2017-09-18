@@ -133,21 +133,19 @@ $ sha256sum rhel-server-7.0-x86_64-dvd.iso
 
 layout: true      
 
-# Создание инсталляционных образов.
+# iso файл есть. Ну и что с ним делать?
 
 ---
 
-- iso файл есть. Ну и что с ним делать?
+- Записать на DVD болванку. <img src="pics/strange.jpg" width="150"> Вы странный.
 --
-  + Записать на DVD болванку. <img src="pics/strange.jpg" width="100"> Вы странный.
---
-  + записать образ на флешку.
-    * GNU/Linux
+- Записать образ на флешку.
+ - GNU/Linux
 ```bash
 # dd if=/image_directory/image.iso of=/dev/device bs=blocksize
 ``
 ---      
-    * Windows
+ - Windows
       "Fedora USB Creator"(RIP),
       [Rufus](https://rufus.akeo.ie/?locale=ru_RU) ![Rufus](https://rufus.akeo.ie/pics/rufus_ru.png)
       [UNetbootin](http://unetbootin.github.io/) ![UNetbootin](http://unetbootin.github.io/screenshot1.jpg)
@@ -156,10 +154,10 @@ layout: true
       и это не полный список... 
 ---
 
-  + Сходить в магазин за новыми гиковскими железками https://geektimes.ru/post/220007/
+ - Сходить в магазин за новыми гиковскими железками https://geektimes.ru/post/220007/
       
       .center[<img src="pics/strange.jpg" width="50">]
-  + Всё сложно
+ - Всё сложно
      Docker, Vagrant, Packer, PXE with Network Install и т.д. 
 
 --
