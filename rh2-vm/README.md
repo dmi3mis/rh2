@@ -48,8 +48,8 @@ root            | redhat
 
 1. [Hashicorp Vagrant](https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.msi)
 2. [Cmder + Git for Windows](https://github.com/cmderdev/cmder/releases/download/v1.3.2/cmder.zip)
-3. [Vagrant образ CentOS 7 под VirtualBox](https://vagrantcloud.com/centos/boxes/7/versions/1708.01/providers/virtualbox.box)
-4. [Образ диска с RHEL 7 Vagrant для VirtualBox](https://access.redhat.com/downloads/content/293/ver=2.4/rhel---7/2.4.0/x86_64/product-software) (распространяется по подписке и ссылка на загрузку динамическая. как загрузить см ниже)
+3. [Vagrant образ CentOS 7 под VirtualBox ](https://vagrantcloud.com/centos/boxes/7/versions/1708.01/providers/virtualbox.box)
+4. [Образ диска **RHEL 7.3 Vagrant box for libvirt or VirtualBox** и **Red Hat Container Tools**](https://access.redhat.com/downloads/content/293/ver=2.4/rhel---7/2.4.0/x86_64/product-software) (распространяется по подписке и ссылка на загрузку динамическая. как загрузить см ниже)
 4. [Образ DVD диска с RHEL 7](https://access.redhat.com/downloads/content/69/ver=/rhel---7/7.4/x86_64/product-software) (распространяется по подписке и ссылка на загрузку динамическая.)
 5. [Oracle VirtualBox](http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe)
 6. [Extension Pack для VirtualBox](http://download.virtualbox.org/virtualbox/5.1.26/Oracle_VM_VirtualBox_Extension_Pack-5.1.26-117224.vbox-extpack)
@@ -72,14 +72,14 @@ root            | redhat
 ### Запуск среды, используя версию CentOS:
 
 ```
-cd rhel-lab
+cd rh2\rh2-vm
 vagrant up
 ```
 
 ### RHEL version:
 > Важно: Версия RHEL требует активной подписки RHN
 
-Заргузите файлы-образы **RHEL 7.3 Vagrant box for libvirt or VirtualBox** and the **Red Hat Container Tools** from [access.redhat.com][2].
+Загрузите файлы-образы **RHEL 7.3 Vagrant box for libvirt or VirtualBox** and the **Red Hat Container Tools** from [access.redhat.com][2].
 ```
 unzip cdk-*.zip && cd cdk/plugins
 vagrant plugin install vagrant-registration
