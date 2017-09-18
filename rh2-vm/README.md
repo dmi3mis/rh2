@@ -1,6 +1,6 @@
 
 # Виртуальные машины для практик на курсе RH2.
-Тестовая среда основана на https://bitbucket.org/allyourco_de/rhel-lab (тестовой среды для практики сдачи RHCSA(EX200) и RHCE(EX300) экзаменов. Добавлен DHCP+PXE сервер.
+Тестовая среда основана на https://bitbucket.org/allyourco_de/rhel-lab (тестовой среды для практики сдачи RHCSA(EX200) и RHCE(EX300) экзаменов.
 
 ## Описание 
 Тестовая среда состоит из 3 виртуальных машин с CentOS7, либо RHEL7.
@@ -14,8 +14,9 @@ root            | redhat
 
 #### classroom.example.com
 * ip: 172.25.0.254
-* DHCP сервер, раздающий аренды для подсети 172.25.0.0/16 dns 172.25.0.254
-* pxe сервер для загрузки используя сеть
+* DHCP сервер, раздающий аренды для подсети 172.25.0.0/16 
+* DNS сервер.
+* PXE для загрузки по сети
 * ftp сервер для репозитория пакетов с dvd диска дистрибутива ftp://172.25.0.254/pub/dvd
 * ipa server: https://classroom.example.com
 * cert & keytabs: ftp://classroom.example.com
