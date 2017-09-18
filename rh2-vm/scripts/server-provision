@@ -1,10 +1,6 @@
 #!/bin/sh
 
 yum install -y ipa-client chrony bash-completion bash-completion-extra
-
-# chrony is installed by default on the exam
-# this is a minimal installed server, so to
-# not add extra difficulty we enable it.
 systemctl enable chronyd
 systemctl start  chronyd
 
