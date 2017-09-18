@@ -18,6 +18,7 @@
   </head>
   <body>
     <textarea id="source">
+---
 
 layout: true
 class: center, middle
@@ -58,22 +59,25 @@ class: center, middle
 - Как вы там бесплатные линуксы?
       
 --
-
- .center[<img src="pics/mirror.yandex.ru.png" width="300">]
-
+ .right[<img src="pics/mirror.yandex.ru.png" width="300">]
 --
-      
 ---
 
-`` >rsync -P -h rsync://mirror.yandex.ru/centos/7.4.1708/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso .
+```>rsync -P -h rsync://mirror.yandex.ru/centos/7.4.1708/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso .
 CentOS-7-x86_64-DVD-1708.iso
-350.57M   7%    7.88MB/s    0:08:36 (xfr#1, to-chk=0/1) ``
+350.57M   7%    7.88MB/s    0:08:36 (xfr#1, to-chk=0/1) 
+```
 - Ссылки на загрузку все статические
 - Протоколы rsync, http, ftp и даже torrent.  .right[<img src="pics/Obama-reddit-ama-not-bad.jpg" width="30">]
 --
 
 ---
-- Как качать дистрибы от Red Hat? А что нужно качать, что есть?
+
+layout: true      
+
+# Как качать дистрибы от Red Hat? А что нужно качать, что есть?
+
+---
  - Red Hat Enterprise Linux x86_64.
  - Образ
   * DVD Диск  - Полный диск со всем необходимым.
