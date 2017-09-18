@@ -47,7 +47,8 @@ root            | redhat
 Загрузка скриптов и дистрибутивов.
 
 1. [Hashicorp Vagrant](https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.msi)
-2. [Cmder + Git for Windows](https://github.com/cmderdev/cmder/releases/download/v1.3.2/cmder.zip)
+2. [Cmder Mini](https://github.com/cmderdev/cmder/releases/download/v1.3.2/cmder.zip)
+3. [Git for Windows](https://github.com/git-for-windows/git/releases/download/v2.14.1.windows.1/Git-2.14.1-64-bit.exe)
 3. [Vagrant образ CentOS 7 под VirtualBox ](https://vagrantcloud.com/centos/boxes/7/versions/1708.01/providers/virtualbox.box)
 4. [Образ диска **RHEL 7.3 Vagrant box for libvirt or VirtualBox** и **Red Hat Container Tools**](https://access.redhat.com/downloads/content/293/ver=2.4/rhel---7/2.4.0/x86_64/product-software) (распространяется по подписке и ссылка на загрузку динамическая. как загрузить см ниже)
 4. [Образ DVD диска с RHEL 7](https://access.redhat.com/downloads/content/69/ver=/rhel---7/7.4/x86_64/product-software) (распространяется по подписке и ссылка на загрузку динамическая.)
