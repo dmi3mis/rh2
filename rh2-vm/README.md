@@ -43,14 +43,16 @@ root            | redhat
 
 1. **Hashicorp Vagrant** https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.msi
 2. **Cmder + Git for Windows** https://github.com/cmderdev/cmder/releases/download/v1.3.2/cmder.zip
-3. **Vagrant образ Centos7 под VirtualBox** https://vagrantcloud.com/centos/boxes/7/versions/1708.01/providers/virtualbox.box 385Мб
-4. **Образ диска с RHEL 7 Vagrant под VirtualBox** (распространяется по подписке и ссылка на загрузку динамическая. как загрузить см выше)
-5. **VirtualBox 5.1.26** http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe
+3. **Vagrant образ CentOS 7 под VirtualBox** https://vagrantcloud.com/centos/boxes/7/versions/1708.01/providers/virtualbox.box 385Мб
+4. **Образ диска с RHEL 7 Vagrant под VirtualBox** (распространяется по подписке и ссылка на загрузку динамическая. как загрузить см ниже)
+4. **Образ DVD диска с RHEL 7** https://access.redhat.com/downloads/content/69/ver=/rhel---7/7.4/x86_64/product-software (распространяется по подписке и ссылка на загрузку динамическая.)
+5. **Oracle VirtualBox** http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe
 6. **Extension Pack для VirtualBox** http://download.virtualbox.org/virtualbox/5.1.26/Oracle_VM_VirtualBox_Extension_Pack-5.1.26-117224.vbox-extpack
-7. Скрипты rhel-lab для установки виртуальных машин https://bitbucket.org/dmi3mis/rhel-lab.git
- Скрипты rhel-lab можно загрузить с помощью Cmder+ Git for windows такой командой 
+7. **Образ DVD диска с  CentOS 7**  ftp://mirror.yandex.ru/centos/7.4.1708/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso
+8. Скрипты rh2-vm для установки виртуальных машин https://github.com/dmi3mis/rh2
+ Скрипты rh2-vm можно загрузить с помощью *Cmder + Git for windows* такой командой 
 
-`` git clone https://bitbucket.org/dmi3mis/rhel-lab.git ``
+``git clone https://github.com/dmi3mis/rh2/rh2.rh2-vm.git``
 
 После загрузки обязательно откройте `Vagrantfile` и установите в параметр `config.vm.box` значение:
 1. `Centos/7`, чтобы использовать Centos версию тестовой среды.
@@ -59,8 +61,7 @@ root            | redhat
 Также укажите либо через переменные окружения, либо через редактирование `Vagrantfile`:
 1. `SUBSCRIPTION_USERNAME` Имя пользователя подписки RHN (Только для RHEL версии)
 2. `SUBSCRIPTION_PASSWORD` Пароль пользователя подписки RHN (Только для RHEL версии)
-4. `VBOX_VM_PATH` Каталог, где будет создаваться файл жесткого диска server.example.com  храниться 
-5. `LIBVIRT_STORAGE_POOL`
+4. `VBOX_VM_PATH` `LIBVIRT_STORAGE_POOL` Каталоги, где будут храниться файл-образ жесткого диска и DVD-диск дистрибутива (каждый для своих систем виртуализации virtualbox и libvirt)
 
 
 ### Запуск среды, используя версию CentOS:
@@ -71,13 +72,13 @@ vagrant up
 ```
 
 ### RHEL version:
-_Note: The rhel version requires an active subscription._
+> Важно: Версия RHEL требует активной подписки RHN
 
-Download both the **RHEL 7.3 Vagrant box for libvirt or VirtualBox** and the **Red Hat Container Tools** from [access.redhat.com][2].
+Заргузите файлы-образы **RHEL 7.3 Vagrant box for libvirt or VirtualBox** and the **Red Hat Container Tools** from [access.redhat.com][2].
 ```
 unzip cdk-*.zip && cd cdk/plugins
 vagrant plugin install vagrant-registration
-vagrant box add rhel/7.3 file://rhel-cdk-kubernetes-*.vagrant-*.box
+vagrant box add RHEL/7 file://rhel-cdk-kubernetes-*.vagrant-*.box
 export SUBSCRIPTION_USERNAME='foo' SUBSCRIPTION_PASSWORD='bar'
 cd rhel-lab
 vagrant up
