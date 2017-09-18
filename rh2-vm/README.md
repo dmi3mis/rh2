@@ -90,75 +90,16 @@ vagrant up
 
 Загрузите файлы-образы **RHEL 7.3 Vagrant box for libvirt or VirtualBox** and the **Red Hat Container Tools** from [access.redhat.com][2].
 ```
-unzip cdk-*.zip && cd cdk/plugins
-vagrant plugin install vagrant-registration
+>vagrant plugin install vagrant-registration
+Installing the 'vagrant-registration' plugin. This can take a few minutes...
+Fetching: vagrant-share-1.1.9.gem (100%)
+Fetching: vagrant-registration-1.3.1.gem (100%)
+Installed the plugin 'vagrant-registration (1.3.1)'!
 vagrant box add rhel/7 file://rhel-cdk-kubernetes-*.vagrant-*.box
 export SUBSCRIPTION_USERNAME='foo' SUBSCRIPTION_PASSWORD='bar'
 cd rhel-lab
 vagrant up
 ```
-
-### Решение некоторых проблем с vagrant на Windows 
-1. Vagrant не запускается и выдаёт вот такую ошибку
-```
->vagrant
-C:/HashiCorp/Vagrant/embedded/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require': cannot load such file -- vagrant-share/help
-        from C:/HashiCorp/Vagrant/embedded/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-share-1.1.7/lib/vagrant-share/activate.rb:244:in `<encoded>'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-share-1.1.7/lib/vagrant-share/activate.rb:16:in `RGLoader_load'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-share-1.1.7/lib/vagrant-share/activate.rb:16:in `<top (required)>'
-        from C:/HashiCorp/Vagrant/embedded/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
-        from C:/HashiCorp/Vagrant/embedded/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-share-1.1.7/lib/vagrant-share.rb:23:in `block in <class:Plugin>'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/lib/vagrant/cli.rb:75:in `call'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/lib/vagrant/cli.rb:75:in `block (2 levels) in help'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/lib/vagrant/registry.rb:49:in `block in each'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/lib/vagrant/registry.rb:48:in `each'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/lib/vagrant/registry.rb:48:in `each'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/lib/vagrant/cli.rb:69:in `block in help'
-        from C:/HashiCorp/Vagrant/embedded/lib/ruby/2.2.0/optparse.rb:917:in `initialize'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/lib/vagrant/cli.rb:57:in `new'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/lib/vagrant/cli.rb:57:in `help'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/lib/vagrant/cli.rb:32:in `execute'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/lib/vagrant/environment.rb:308:in `cli'
-        from C:/HashiCorp/Vagrant/embedded/gems/gems/vagrant-1.9.4/bin/vagrant:127:in `<main>'
-```
-Суть проблемы: Стоит сломаный плагин  vagrant-share v1.1.7
-Решение: Поставить плагин vagrant-share v1.1.8
-```
->vagrant plugin list
-vagrant-registration (1.3.1)
-vagrant-share (1.1.7)
-
->vagrant plugin uninstall vagrant-share
-Uninstalling the 'vagrant-share' plugin...
-
->vagrant plugin install vagrant-share --plugin-version 1.1.8
-Installing the 'vagrant-share --version '1.1.8'' plugin. This can take a few minutes...
-Fetching: vagrant-share-1.1.8.gem (100%)
-Installed the plugin 'vagrant-share (1.1.8)'!
-
->vagrant
-Usage: vagrant [options] <command> [<args>]
-
-    -v, --version                    Print the version and exit.
-    -h, --help                       Print this help.
-
-Common commands:
-     box             manages boxes: installation, removal, etc.
-     connect         connect to a remotely shared Vagrant environment
-     destroy         stops and deletes all traces of the vagrant machine
-     global-status   outputs status Vagrant environments for this user
-     halt            stops the vagrant machine
-     help            shows the help for a subcommand
-     init            initializes a new Vagrant environment by creating a Vagrantfile
-     login           log in to HashiCorp's Atlas
-     package         packages a running vagrant environment into a box
-```
-2. vagrant не запускается и не выдаёт никаких ошибок.
-Суть проблемы: Vagrant поломан на Windows 10 1703, если запускается через сборку "Cmder + Git on windows".
-Решение: Используйте cmd, либо "Cmder mini".
-
 
 [1]: http://www.sandervanvugt.com/books/ "Red Hat RHCE/RHCSA 7 Cert Guide"
 [2]: https://access.redhat.com/downloads/content/293/ver=2.4/rhel---7/2.4.0/x86_64/product-software "access.redhat.com"
