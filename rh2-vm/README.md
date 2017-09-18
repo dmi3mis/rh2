@@ -49,12 +49,12 @@ root            | redhat
 1. [Hashicorp Vagrant](https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.msi)
 2. [Cmder + Git for Windows](https://github.com/cmderdev/cmder/releases/download/v1.3.2/cmder.zip)
 3. [Vagrant образ CentOS 7 под VirtualBox](https://vagrantcloud.com/centos/boxes/7/versions/1708.01/providers/virtualbox.box)
-4. **Образ диска с RHEL 7 Vagrant для VirtualBox** (распространяется по подписке и ссылка на загрузку динамическая. как загрузить см ниже)
-4. **Образ DVD диска с RHEL 7** https://access.redhat.com/downloads/content/69/ver=/rhel---7/7.4/x86_64/product-software (распространяется по подписке и ссылка на загрузку динамическая.)
-5. **Oracle VirtualBox** http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe
-6. **Extension Pack для VirtualBox** http://download.virtualbox.org/virtualbox/5.1.26/Oracle_VM_VirtualBox_Extension_Pack-5.1.26-117224.vbox-extpack
-7. **Образ DVD диска с  CentOS 7**  ftp://mirror.yandex.ru/centos/7.4.1708/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso
-8. **Скрипты rh2-vm для установки виртуальных машин** https://github.com/dmi3mis/rh2
+4. [Образ диска с RHEL 7 Vagrant для VirtualBox](https://access.redhat.com/downloads/content/293/ver=2.4/rhel---7/2.4.0/x86_64/product-software) (распространяется по подписке и ссылка на загрузку динамическая. как загрузить см ниже)
+4. [Образ DVD диска с RHEL 7](https://access.redhat.com/downloads/content/69/ver=/rhel---7/7.4/x86_64/product-software) (распространяется по подписке и ссылка на загрузку динамическая.)
+5. [Oracle VirtualBox](http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe)
+6. [Extension Pack для VirtualBox](http://download.virtualbox.org/virtualbox/5.1.26/Oracle_VM_VirtualBox_Extension_Pack-5.1.26-117224.vbox-extpack)
+7. [DVD образ дистрибутива CentOS 7](ftp://mirror.yandex.ru/centos/7.4.1708/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso)
+8. [Скрипты rh2-vm для установки виртуальных машин](https://github.com/dmi3mis/rh2/rh2)
 Можно загрузить с помощью *Cmder + Git for windows* такой командой.
 
 ``git clone https://github.com/dmi3mis/rh2/rh2.rh2-vm.git``
