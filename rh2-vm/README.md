@@ -16,7 +16,13 @@ root            | redhat
 * DHCP сервер, раздающий аренды для подсети 172.25.0.0/16 dns 172.25.0.254
 * pxe сервер для загрузки используя сеть
 * ftp сервер для репозитория пакетов с dvd диска дистрибутива ftp://172.25.0.254/pub/dvd
-* 
+* ipa server: https://classroom.example.com
+* cert & keytabs: ftp://classroom.example.com
+    - server.keytab is configured for nfs and cifs
+* ipa administartor admin with password 'password'
+* ipa user lisa with password 'password'
+* ipa user linda with password 'password'
+
 
 #### server.example.com
 * ip: 172.25.0.11
