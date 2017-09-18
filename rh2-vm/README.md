@@ -1,7 +1,6 @@
 
 # Виртуальные машины для практик на курсе RH2.
-Тестовая среда основана на https://bitbucket.org/allyourco_de/rhel-lab и переделана для работы PXE сервера.
-
+Тестовая среда основана на https://bitbucket.org/allyourco_de/rhel-lab (тестовой среды для практики сдачи RHCSA(EX200) и RHCE(EX300) экзаменов. Добавлен DHCP+PXE сервер.
 
 ## Описание 
 Тестовая среда состоит из 3 виртуальных машин с CentOS7, либо RHEL7.
@@ -21,10 +20,12 @@ root            | redhat
 * ipa server: https://classroom.example.com
 * cert & keytabs: ftp://classroom.example.com
     - server.keytab is configured for nfs and cifs
-* ipa administartor admin with password 'password'
-* ipa user lisa with password 'password'
-* ipa user linda with password 'password'
 
+Пользователи IPA| Пароль
+----------------|--------
+administator (admin) | password
+lisa | password
+linda            | password
 
 #### server.example.com
 * ip: 172.25.0.11
