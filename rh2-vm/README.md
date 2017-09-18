@@ -46,9 +46,9 @@ root            | redhat
 ## Установка
 Загрузка скриптов и дистрибутивов.
 
-1. **Hashicorp Vagrant** https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.msi
-2. **Cmder + Git for Windows** https://github.com/cmderdev/cmder/releases/download/v1.3.2/cmder.zip
-3. **Vagrant образ CentOS 7 под VirtualBox** https://vagrantcloud.com/centos/boxes/7/versions/1708.01/providers/virtualbox.box
+1. [Hashicorp Vagrant](https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.msi)
+2. [Cmder + Git for Windows](https://github.com/cmderdev/cmder/releases/download/v1.3.2/cmder.zip)
+3. [Vagrant образ CentOS 7 под VirtualBox](https://vagrantcloud.com/centos/boxes/7/versions/1708.01/providers/virtualbox.box)
 4. **Образ диска с RHEL 7 Vagrant для VirtualBox** (распространяется по подписке и ссылка на загрузку динамическая. как загрузить см ниже)
 4. **Образ DVD диска с RHEL 7** https://access.redhat.com/downloads/content/69/ver=/rhel---7/7.4/x86_64/product-software (распространяется по подписке и ссылка на загрузку динамическая.)
 5. **Oracle VirtualBox** http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe
