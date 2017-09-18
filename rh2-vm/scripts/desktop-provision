@@ -1,3 +1,5 @@
 #!/bin/sh
 
 yum group install -y "Server with GUI"
+systemctl set-default graphical.target
+systemctl isolate graphical.target
