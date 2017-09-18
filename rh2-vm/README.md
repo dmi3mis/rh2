@@ -1,5 +1,5 @@
-# rh2-vm
-Виртуальные машины для практик на курсе RH2.
+
+# Виртуальные машины для практик на курсе RH2.
 
 ## Описание 
 Тестовая среда состоит из 3 виртуальных машин с CentOS7, либо RHEL7.
@@ -34,37 +34,43 @@ root            | redhat
 
 #### desktop.example.com
 * ip: 172.25.0.10
-* with an extra 10 GiB unpartitioned drive
-* Server with GUI (installed but not enabled)
+* Дополнительный пустой жесткий диск на 10 GiB
+* Поставлен комплект пакетов "Server with GUI", запуск по умолчанию с графической оболочкой
 
 ## Требования
 * Vagrant
 * libvirt или VirtualBox
 * Минимум 4 GiB Памяти (Используя рекомандованные настройки)
-*  Минимум 20 GiB на жестком диске (Используя рекомандованные настройки)
+* Минимум 20 GiB на жестком диске (Используя рекомандованные настройки)
 
-## Установка
-Загрузка скриптов и дистрибутивов.
-
+## Установка и настройка.
 1. [Hashicorp Vagrant](https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.msi)
+После установки обязательна перезагрузка.
+Папка установки по умолчанию `C:\HashiCorp\Vagrant\`
+>Если хотите, чтобы у вас в командной строке работали ssh, rsync и т.д. их можно запускать из `C:\HashiCorp\Vagrant\embedded\usr\bin`
+>Можно добавить путь к утилитам в переменную окружения `PATH`.
+> - Через cmd.exe  `setx /M PATH %PATH%;C:\HashiCorp\Vagrant\embedded\usr\bin"`
+> - Через powershell `$env:Path += ";C:\HashiCorp\Vagrant\embedded\usr\bin"`
+> Проверьте изменённое значение, после перезапуска консоли `echo %PATH%`
+
+
 2. [Cmder Mini](https://github.com/cmderdev/cmder/releases/download/v1.3.2/cmder.zip)
 3. [Git for Windows](https://github.com/git-for-windows/git/releases/download/v2.14.1.windows.1/Git-2.14.1-64-bit.exe)
 3. [Vagrant образ CentOS 7 под VirtualBox ](https://vagrantcloud.com/centos/boxes/7/versions/1708.01/providers/virtualbox.box)
-4. [Образ диска **RHEL 7.3 Vagrant box for libvirt or VirtualBox** и **Red Hat Container Tools**](https://access.redhat.com/downloads/content/293/ver=2.4/rhel---7/2.4.0/x86_64/product-software) (распространяется по подписке и ссылка на загрузку динамическая. как загрузить см ниже)
-4. [Образ DVD диска с RHEL 7](https://access.redhat.com/downloads/content/69/ver=/rhel---7/7.4/x86_64/product-software) (распространяется по подписке и ссылка на загрузку динамическая.)
+4. [Образ диска **RHEL 7.3 Vagrant box for libvirt or VirtualBox** и **Red Hat Container Tools**](https://access.redhat.com/downloads/content/293/ver=2.4/rhel---7/2.4.0/x86_64/product-software) (для загрузки нужна подписка RHN)
+4. [Образ DVD диска с RHEL 7](https://access.redhat.com/downloads/content/69/ver=/rhel---7/7.4/x86_64/product-software) (для загрузки нужна подписка RHN)
 5. [Oracle VirtualBox](http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe)
 6. [Extension Pack для VirtualBox](http://download.virtualbox.org/virtualbox/5.1.26/Oracle_VM_VirtualBox_Extension_Pack-5.1.26-117224.vbox-extpack)
 7. [DVD образ дистрибутива CentOS 7](http://mirror.yandex.ru/centos/7.4.1708/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso)
 8. [Скрипты rh2-vm для установки виртуальных машин](https://github.com/dmi3mis/rh2/rh2)
-Можно загрузить с помощью *Cmder + Git for windows* такой командой.
+- Можно загрузить с помощью *Git* такой командой.
+  ``git clone https://github.com/dmi3mis/rh2/rh2.git``
 
-``git clone https://github.com/dmi3mis/rh2/rh2.rh2-vm.git``
-
-После загрузки обязательно откройте `Vagrantfile` и установите в параметр `config.vm.box` значение:
-1. `centos/7`, чтобы использовать Centos версию тестовой среды.
+После загрузки обязательно откройте и измените `rh2/rh2-vm/Vagrantfile` и установите в параметр `config.vm.box` значение:
+1. `centos/7`, чтобы использовать Centos версию тестовой среды. (по умолчанию)
 2. `rhel/7`, чтобы использовать RHEL версию.
 
-Также укажите либо через переменные окружения, либо через редактирование `Vagrantfile`:
+Также обязательно укажите либо через переменные окружения, либо через редактирование `Vagrantfile`:
 1. `SUBSCRIPTION_USERNAME` Имя пользователя подписки RHN (Только для RHEL версии)
 2. `SUBSCRIPTION_PASSWORD` Пароль пользователя подписки RHN (Только для RHEL версии)
 4. `VBOX_VM_PATH` `LIBVIRT_STORAGE_POOL` Каталоги, где будут храниться файл-образ жесткого диска и DVD-диск дистрибутива (каждый для своих систем виртуализации virtualbox и libvirt)
@@ -77,7 +83,7 @@ cd rh2\rh2-vm
 vagrant up
 ```
 
-### RHEL version:
+### Запуск среды, используя версию RHEL:
 > Важно: Версия RHEL требует активной подписки RHN
 
 Загрузите файлы-образы **RHEL 7.3 Vagrant box for libvirt or VirtualBox** and the **Red Hat Container Tools** from [access.redhat.com][2].
@@ -89,6 +95,7 @@ export SUBSCRIPTION_USERNAME='foo' SUBSCRIPTION_PASSWORD='bar'
 cd rhel-lab
 vagrant up
 ```
+
 ### Решение некоторых проблем с vagrant на Windows 
 1. Vagrant не запускается и выдаёт вот такую ошибку
 ```
@@ -146,6 +153,10 @@ Common commands:
      login           log in to HashiCorp's Atlas
      package         packages a running vagrant environment into a box
 ```
+2. vagrant не запускается и не выдаёт никаких ошибок.
+Суть проблемы: Vagrant поломан на Windows 10 1703, если запускается через сборку "Cmder + Git on windows".
+Решение: Используйте cmd, либо "Cmder mini".
+
 
 [1]: http://www.sandervanvugt.com/books/ "Red Hat RHCE/RHCSA 7 Cert Guide"
 [2]: https://access.redhat.com/downloads/content/293/ver=2.4/rhel---7/2.4.0/x86_64/product-software "access.redhat.com"
