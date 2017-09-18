@@ -106,26 +106,29 @@ layout: true
 - Ссылка на загрузку динамическая.
 
 ```bash
->curl -o rhel-server-7.0-x86_64-dvd.iso 'https://access.cdn.redhat.com//content/origin/files/sha256/8\
+>curl -o rhel-server-7.0-x86_64-dvd.iso \
 
-5/85a...46c/rhel-server-7.0-x86_64-dvd.iso?_auth_=141...7bf'
+'https://access.cdn.redhat.com//content/origin/files/sha256/85/85a...46c/\
 
+rhel-server-7.0-x86_64-dvd.iso?_auth_=141...7bf'
 >$ curl -o rhel-server-7.0-x86_64-dvd.iso 'https://access.cdn.redhat.com//content/origin/files/sha256\
 
-/85/85a...46c/rhel-server-7.0-x86_64-dvd.iso?_auth_=141...963' **-C -**
+/85/85a...46c/rhel-server-7.0-x86_64-dvd.iso?_auth_=141...963' -C -
 ```
 
 --
+      
 - ~~Мойте руки перед едой~~ Проверяйте контрольные суммы.
 
-``bash
+```bash
 $ sha256sum rhel-server-7.0-x86_64-dvd.iso
 
 85a...46c rhel-server-7.0-x86_64-dvd.iso
-``
+```
 --
 
 - Всегда читайте [Примечания к выпуску Release Notes](https://access.redhat.com/documentation/ru/red-hat-enterprise-linux/ "Тут может быть важное")
+
 --
 
 - Не забудьте про [Руководство по установке](https://access.redhat.com/site/documentation/ru-RU/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/index.html "Почитай меня")
@@ -136,11 +139,11 @@ layout: true
 
 # Создание инсталляционных образов.
       
---      
 - iso файл есть. Ну и что с ним делать?
 --      
   + Записать на DVD болванку.
       .center[<img src="pics/strange.jpg" width="50">]
+      Вы странный.
 --
   + записать образ на флешку.
     * linux `` # dd if=/image_directory/image.iso of=/dev/device bs=blocksize``
@@ -152,7 +155,7 @@ layout: true
       [LiLi](http://www.linuxliveusb.com/en/home) ![LiLi](http://www.linuxliveusb.com/images/stories/screenshots/2.jpg)
       UTmake
       и это не полный список... 
--- 
+---
 
   + Сходить в магазин за новыми гиковскими железками https://geektimes.ru/post/220007/
       
