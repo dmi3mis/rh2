@@ -89,6 +89,7 @@ layout: true
 
  - Red Hat Enterprise Linux x86_64.
 --
+<img src="pics/download-dvd.png" width="200">
 
  - Образы
   * DVD Диск  - Полный диск со всем необходимым.
@@ -96,12 +97,12 @@ layout: true
   * Supplementary DVD - Доп. материалы.
       ~~Сейчас нужны как тот скрипач~~
   * WinInstaller - Образы установки, запускающиеся из Windows.
----
-      .right[<img src="pics/download-dvd.png" width="300">]
----
 
+--
+
+
+--
 - Распространяется по подписке.
-
 --
 - Ссылка на загрузку динамическая.
 
@@ -134,16 +135,20 @@ $ sha256sum rhel-server-7.0-x86_64-dvd.iso
 layout: true      
 
 # Создание инсталляционных образов.
+
+---
+
 - iso файл есть. Ну и что с ним делать?
---      
-  + Записать на DVD болванку.
-      .center[<img src="pics/strange.jpg" width="50">]
-      Вы странный.
+--
+  + Записать на DVD болванку. <img src="pics/strange.jpg" width="100"> Вы странный.
 --
   + записать образ на флешку.
-    * linux `` # dd if=/image_directory/image.iso of=/dev/device bs=blocksize``
---      
-    * Windows 
+    * GNU/Linux
+```bash
+# dd if=/image_directory/image.iso of=/dev/device bs=blocksize
+``
+---      
+    * Windows
       "Fedora USB Creator"(RIP),
       [Rufus](https://rufus.akeo.ie/?locale=ru_RU) ![Rufus](https://rufus.akeo.ie/pics/rufus_ru.png)
       [UNetbootin](http://unetbootin.github.io/) ![UNetbootin](http://unetbootin.github.io/screenshot1.jpg)
