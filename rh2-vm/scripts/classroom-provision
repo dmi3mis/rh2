@@ -5,6 +5,26 @@ systemctl start firewalld
 
 firewall-cmd --add-masquerade --permanent; firewall-cmd --reload
 
+cat <<EOF >/etc/yum.repos.d/installmedia-dvd-local.repo
+[installmedia-dvd]
+name = Red Hat Local DVD Repository
+baseurl =file:///var/ftp/pub/dvd
+enabled = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+gpgcheck = 1
+cost = 50
+EOF
+
+echo -e "Configuring FTP server with dvd: \n"
+#############################################
+mkdir -p /var/ftp/pub/dvd
+mount /dev/cdrom /var/ftp/pub/dvd
+
+yum -y install vsftpd
+setsebool ftpd_full_access on
+systemctl enable vsftpd
+systemctl start vsftpd
+
 
 yum -y install syslinux xinetd tftp-server vsftpd bash-completion bash-completion-extra
 
