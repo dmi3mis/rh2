@@ -18,7 +18,7 @@ root            | redhat
 * DNS сервер.
 * PXE для загрузки по сети
 * ftp сервер для репозитория пакетов с dvd диска дистрибутива <ftp://172.25.0.254/pub/dvd>.
-* ipa server: <https://classroom.example.com>
+* ipa сервер: <https://classroom.example.com>
 * cert & keytabs: <ftp://classroom.example.com>
 * server.keytab настроен на работу с nfs and cifs
 
@@ -34,7 +34,7 @@ linda                | password
 * minimal server
 * Дополнительная сетевая карта для NIC Teaming ip: 172.25.0.12
 * Дополнительный пустой жесткий диск на 10 GiB
-* added as an ipa-client to the realm EXAMPLE.COM
+* Настроен как ipa клиент к домену EXAMPLE.COM
 
 ### desktop.example.com
 
