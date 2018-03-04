@@ -51,7 +51,7 @@ linda                | password
 
 ## Установка и настройка
 
-1. [Hashicorp Vagrant](https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.msi)
+1. [Hashicorp Vagrant](https://www.vagrantup.com/downloads.html)
 
    После установки обязательна перезагрузка.
    Папка установки по умолчанию `C:\HashiCorp\Vagrant\`
@@ -62,16 +62,16 @@ linda                | password
    > - Через powershell `$env:Path += ";C:\HashiCorp\Vagrant\embedded\usr\bin"`
    >
    > Проверьте изменённое значение, после перезапуска консоли `echo %PATH%`
-2. [Cmder Mini](https://github.com/cmderdev/cmder/releases/download/v1.3.2/cmder.zip)
+2. [Cmder Mini](http://cmder.net/)
 
 3. [Git for Windows](https://github.com/git-for-windows/git/releases/download/v2.14.1.windows.1/Git-2.14.1-64-bit.exe)
 
 4. [Vagrant образ CentOS 7 под VirtualBox](https://vagrantcloud.com/centos/boxes/7/versions/1708.01/providers/virtualbox.box)
 5. [Образ диска **RHEL 7.3 Vagrant box for libvirt or VirtualBox** и **Red Hat Container Tools**](https://access.redhat.com/downloads/content/293/ver=2.4/rhel---7/2.4.0/x86_64/product-software) (для загрузки нужна подписка RHN)
 6. [Образ DVD диска с RHEL 7](https://access.redhat.com/downloads/content/69/ver=/rhel---7/7.4/x86_64/product-software) (для загрузки нужна подписка RHN)
-7. [Oracle VirtualBox](http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe)
-8. [Extension Pack для VirtualBox](http://download.virtualbox.org/virtualbox/5.1.26/Oracle_VM_VirtualBox_Extension_Pack-5.1.26-117224.vbox-extpack)
-9. [DVD образ дистрибутива CentOS 7](http://mirror.yandex.ru/centos/7.4.1708/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso)
+7. [Oracle VirtualBox](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#vbox)
+8. [Extension Pack для VirtualBox](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#vbox)
+9. [DVD образ дистрибутива CentOS 7](http://mirror.yandex.ru/centos/7.4.1708/isos/x86_64/)
 10. [Скрипты rh2-vm для установки виртуальных машин](https://github.com/dmi3mis/rh2/rh2)
 
     Можно загрузить с помощью *Git* такой командой
