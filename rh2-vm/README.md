@@ -115,6 +115,72 @@ export SUBSCRIPTION_USERNAME='foo' SUBSCRIPTION_PASSWORD='bar'
 cd rhel-lab
 vagrant up
 ```
+### Установка CentOS вместе с гостевыми службами. Для удобного изменения размера экрана и не только
+
+Поставьте на хост плагин к vagrant [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) командой
+
+```bash
+vagrant plugin install vagrant-vbguest
+```
+
+Установка гостевых служб произойдёт автоматически при первом старте. Обычно она выглядит примерно так
+
+```bash
+[desktop] No installation found.
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+ * base: mirror.truenetwork.ru
+ * extras: mirror.truenetwork.ru
+ * updates: mirror.truenetwork.ru
+Package 1:make-3.82-23.el7.x86_64 already installed and latest version
+Package bzip2-1.0.6-13.el7.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package binutils.x86_64 0:2.25.1-32.base.el7_4.1 will be updated
+---> Package binutils.x86_64 0:2.25.1-32.base.el7_4.2 will be an update
+---> Package gcc.x86_64 0:4.8.5-16.el7_4.1 will be installed
+......................
+================================================================================
+ Package                   Arch      Version                   Repository  Size
+================================================================================
+Installing:
+ gcc                       x86_64    4.8.5-16.el7_4.1          updates     16 M
+ kernel-devel              x86_64    3.10.0-693.11.6.el7       updates     14 M
+ perl                      x86_64    4:5.16.3-292.el7          base       8.0 M
+Updating:
+ binutils                  x86_64    2.25.1-32.base.el7_4.2    updates    5.4 M
+Installing for dependencies:
+ cpp                       x86_64    4.8.5-16.el7_4.1          updates    5.9 M
+ glibc-devel               x86_64    2.17-196.el7_4.2          updates    1.1 M
+ glibc-headers             x86_64    2.17-196.el7_4.2          updates    676 k
+ kernel-headers            x86_64    3.10.0-693.17.1.el7       updates    6.0 M
+ 
+.......................
+  perl-podlators.noarch 0:2.5.1-3.el7
+  perl-threads.x86_64 0:1.87-4.el7
+  perl-threads-shared.x86_64 0:1.43-6.el7
+
+Updated:
+  binutils.x86_64 0:2.25.1-32.base.el7_4.2
+
+Complete!
+Copy iso file C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+Mounting Virtualbox Guest Additions ISO to: /mnt
+mount: /dev/loop0 is write-protected, mounting read-only
+Installing Virtualbox Guest Additions 5.2.8 - guest version is unknown
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 5.2.8 Guest Additions for Linux........
+VirtualBox Guest Additions installer
+Copying additional installer modules ...
+Installing additional modules ...
+VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel modules.
+VirtualBox Guest Additions: Starting.
+Redirecting to /bin/systemctl start vboxadd.service
+Redirecting to /bin/systemctl start vboxadd-service.service
+Unmounting Virtualbox Guest Additions ISO from: /mnt
+==> desktop: Checking for guest additions in VM...
+```
+
 
 [1]: http://www.sandervanvugt.com/books/ "Red Hat RHCE/RHCSA 7 Cert Guide"
 [2]: https://access.redhat.com/downloads/content/293/ver=2.4/rhel---7/2.4.0/x86_64/product-software "access.redhat.com"
