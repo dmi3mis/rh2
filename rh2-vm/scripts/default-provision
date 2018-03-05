@@ -1,6 +1,7 @@
 #!/bin/sh
 
 useradd student -p $(echo student | openssl passwd -stdin -1) -G wheel
+useradd student -p $(echo student | openssl passwd -stdin -1) -G vagrant
 usermod root -p $(echo redhat | openssl passwd -stdin -1)
 
 systemctl enable firewalld.service
