@@ -4,9 +4,5 @@ useradd student -p $(echo student | openssl passwd -stdin -1) -G wheel
 useradd student -G vagrant
 usermod root -p $(echo redhat | openssl passwd -stdin -1)
 
-# man fix
-yum reinstall man man-db man-pages -y
-mandb -c
-
 systemctl enable firewalld.service
 systemctl start firewalld.service
