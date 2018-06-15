@@ -72,17 +72,17 @@ linda                | password
 7. [Oracle VirtualBox](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#vbox)
 8. [Extension Pack для VirtualBox](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#vbox)
 9. [DVD образ дистрибутива CentOS 7](http://mirror.yandex.ru/centos/7.4.1708/isos/x86_64/)
-10. [Скрипты rh2-vm для установки виртуальных машин](https://github.com/dmi3mis/rh2/rh2)
+10. [Скрипты rh2-vm для установки виртуальных машин](https://github.com/dmi3mis/rh2)
 
     Можно загрузить с помощью *Git* такой командой
     ```bash
-    git clone https://github.com/dmi3mis/rh2/rh2.git
+    git clone https://github.com/dmi3mis/rh2
     ```
 
 После загрузки обязательно откройте и измените `rh2/rh2-vm/Vagrantfile` и установите в параметр `config.vm.box` значение:
 
-1. `centos/7`, чтобы использовать Centos версию тестовой среды. (по умолчанию)
-2. `rhel/7`, чтобы использовать RHEL версию.
+1. `centos/7`, чтобы использовать CentOS 7 (по умолчанию).
+2. `rhel/7`, чтобы использовать RHEL 7 .
 
 Также обязательно укажите либо через переменные окружения, либо через редактирование `Vagrantfile`:
 
