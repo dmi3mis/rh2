@@ -86,7 +86,9 @@ systemctl start xinetd
 
 mkdir /var/ftp/pub/dvd
 mount /dev/cdrom /var/ftp/pub/dvd
-setsebool ftpd_full_access on
+echo "/dev/cdrom /var/ftp/pub/dvd iso9660 defaults 0 0" >> /etc/fstab
+
+setsebool -P ftpd_full_access on
 
 cp /var/ftp/pub/dvd/images/pxeboot/vmlinuz /var/lib/tftpboot/ 
 cp /var/ftp/pub/dvd/images/pxeboot/initrd.img /var/lib/tftpboot/
