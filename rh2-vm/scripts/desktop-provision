@@ -20,5 +20,9 @@ yum group install -y "Server with GUI"
 yum reinstall man man-db man-pages -y
 mandb -c
 
+# info index rebuilding
+rm /usr/share/info/dir
+for f in /usr/share/info/* ; do install-info $f dir ; done
+
 systemctl set-default graphical.target
 systemctl isolate graphical.target
